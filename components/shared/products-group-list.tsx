@@ -15,13 +15,7 @@ interface Props {
 	listClassName?: string
 }
 
-const ProductsGroupList: React.FC<Props> = ({
-	title,
-	product,
-	categoryId,
-	className,
-	listClassName,
-}) => {
+const ProductsGroupList: React.FC<Props> = ({ title, product, categoryId, className, listClassName }) => {
 	const intersectionRef = React.useRef(null)
 	const intersection = useIntersection(intersectionRef, {
 		threshold: 0.4,
@@ -32,7 +26,7 @@ const ProductsGroupList: React.FC<Props> = ({
 		if (intersection?.isIntersecting) {
 			setActiveCategoryId(categoryId)
 		}
-	}, [categoryId, intersection])
+	}, [intersection, categoryId, setActiveCategoryId])
 
 	return (
 		<div className={cn('', className)} id={title} ref={intersectionRef}>
