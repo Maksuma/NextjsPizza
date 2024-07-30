@@ -135,12 +135,6 @@ export const products = [
     categoryId: 2,
   },
   {
-    name: 'Кофе Латте',
-    imageUrl:
-      'https://media.dodostatic.net/image/r:292x292/11EE7D61B0C26A3F85D97A78FEEE00AD.webp',
-    categoryId: 2,
-  },
-  {
     name: 'Дэнвич ветчина и сыр',
     imageUrl:
       'https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.webp',

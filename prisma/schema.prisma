@@ -44,7 +44,7 @@ model Product {
   name        String
   imageUrl    String
   
-  ingredient Ingredient[]
+  ingredients Ingredient[]
   items ProductItem[]
 
   createdAt   DateTime @default(now())
